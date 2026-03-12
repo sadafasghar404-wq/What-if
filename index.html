@@ -375,6 +375,62 @@
             box-sizing: border-box;
             border-radius: 4px;
         }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .ripple-feed {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body, html {
+                height: auto;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+            main {
+                flex-direction: column;
+                height: auto;
+            }
+            .war-room {
+                width: 100%;
+                min-width: 100%;
+                box-sizing: border-box;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                overflow-y: visible;
+            }
+            .view-area {
+                min-height: 80vh;
+                width: 100%;
+            }
+            .results-container {
+                padding: 1rem;
+                align-items: center;
+                justify-content: center;
+            }
+            .ripple-feed {
+                width: 100%;
+            }
+            .modal {
+                width: 90%;
+                padding: 1.5rem;
+                box-sizing: border-box;
+            }
+            .feed-header, .feed-content {
+                padding: 1rem;
+            }
+            .stage-headline {
+                font-size: 1.1rem;
+            }
+            .header-title {
+                font-size: 1.1rem;
+            }
+            .header-subtitle {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
